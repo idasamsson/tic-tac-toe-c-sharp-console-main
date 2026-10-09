@@ -1,54 +1,68 @@
 class Game
 {
     private Board _board;
-    private string playerXName;
-    private string playerOName;
+    private string _playerXName;
+    private string _playerOName;
 
 
     public Game()
     {
         _board = new Board();
         AskForNames();
+        MainGameLoop();
     }
 
     private void AskForNames()
     {
         Console.WriteLine("Välkommen till Tic Tac Toe");
+        Console.WriteLine("För att skapa en dum datorspelare lägg till * i någons namn");
         Console.Write("Spelare X:s namn: ");
-        playerXName = Console.ReadLine()!;
+        _playerXName = Console.ReadLine()!;
         Console.Write("Spelare O:s namn: ");
-        playerOName = Console.ReadLine()!;
+        _playerOName = Console.ReadLine()!;
     }
 
     private void MainGameLoop()
     {
-        while (true)
+        while (true) // break this outer loop when someone wins
         {
-            while (true)
+            string? currentPlayer = 
+            _board.CurrentMarker == 'X'
+            ? _playerXName : _playerOName;
+
+            // check if the player is stupid bot
+            if (currentPlayer!.Contains('*'))
             {
-                Console.Clear();
-                _board.Render();
-                Console.WriteLine();
-                Console.WriteLine(
-                    $"{(_board.CurrentMarker == 'X' 
-                    ? playerXName : playerOName)}:s ({_board.CurrentMarker}) tur");
+                StupidBot.MakeMove(_board);
+            }
+            //human
+            else
+            {
+                while (true) // break this loop when someone makes a valid move
+                {
+                    Console.Clear();
+                    _board.Render();
+                    Console.WriteLine();
+                    Console.WriteLine(
+                        $"{currentPlayer}:s ({_board.CurrentMarker}) tur");
 
-                int move = 0;
-                
-                string moveAsString = Console.ReadLine()!;
+                    int move = 0;
+                    
+                    string moveAsString = Console.ReadLine()!;
 
-                int.TryParse(moveAsString, out move);
-                if(move != 0 && _board.PlaceMarker(move)) { break; }
+                    int.TryParse(moveAsString, out move);
+                    if(move != 0 && _board.PlaceMarker(move)) { break; }
+                }
             }
             // Check for win or tie
             if (WinCheck.CheckIsWin(_board, 'X'))
             {
-                Console.WriteLine($"{playerXName} vann!");
+                Console.WriteLine($"{_playerXName} vann!");
                 break;
             }
             else if (WinCheck.IsTie(_board))
             {
-                Console.WriteLine($"{playerXName} vann!");
+                Console.WriteLine($"{_playerXName} vann!");
                 break;
             }
             

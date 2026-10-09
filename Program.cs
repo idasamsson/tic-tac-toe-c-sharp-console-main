@@ -1,2 +1,7 @@
 ﻿Board myBoard = new Board();
-myBoard Render
+
+myBoard.PlaceMarker(5);
+myBoard.PlaceMarker(1);
+myBoard.PlaceMarker(7);
+
+myBoard.Render();

@@ -1,0 +1,15 @@
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\bin\Debug\net10.0\tic-tac-toe-c-sharp-console-main.exe
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\bin\Debug\net10.0\tic-tac-toe-c-sharp-console-main.deps.json
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\bin\Debug\net10.0\tic-tac-toe-c-sharp-console-main.runtimeconfig.json
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\bin\Debug\net10.0\tic-tac-toe-c-sharp-console-main.dll
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\bin\Debug\net10.0\tic-tac-toe-c-sharp-console-main.pdb
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.AssemblyInfoInputs.cache
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.AssemblyInfo.cs
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.csproj.CoreCompileInputs.cache
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.sourcelink.json
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.dll
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\refint\tic-tac-toe-c-sharp-console-main.dll
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.pdb
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\tic-tac-toe-c-sharp-console-main.genruntimeconfig.cache
+C:\Users\idasa\Skrivbord\MAI26HA\Programmering och objektorientered utveckling i C#\Kod\tic-tac-toe\tic-tac-toe-c-sharp-console-main\obj\Debug\net10.0\ref\tic-tac-toe-c-sharp-console-main.dll

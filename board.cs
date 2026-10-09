@@ -14,10 +14,13 @@ class Board
     private char _currentMarker = 'X';
     public char CurrentMarker
     {
-    get(return _currentMarker;) 
+    get { return _currentMarker; }
     }
-    */
 
+    public char [][] Matrix
+    {
+        get { return Matrix; }
+    }
 
 public void Render()
     {

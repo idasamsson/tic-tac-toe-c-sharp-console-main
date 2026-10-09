@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tic-tac-toe-c-sharp-console-main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ca2486f9f60b047a43c83abd1e017ce09d04312")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06541dda38e5e9111dd3885634bb14433e3b617f")]
 [assembly: System.Reflection.AssemblyProductAttribute("tic-tac-toe-c-sharp-console-main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tic-tac-toe-c-sharp-console-main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

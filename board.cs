@@ -1,5 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
-
 class Board
 {
     //a "jagged" two-dimensional array in C#
@@ -19,7 +17,7 @@ class Board
 
     public char [][] Matrix
     {
-        get { return Matrix; }
+        get { return _board; }
     }
 
 public void Render()
@@ -44,7 +42,7 @@ public void Render()
         if(_board[row][col] != (' '))
         { return false;}
 
-        // the move is ok - updat the board
+        // the move is ok - update the board
         _board[row][col] = _currentMarker;
 
         // toggle marker color
@@ -62,6 +60,14 @@ public void Render()
         int col = position % 3;
         return PlaceMarker(row, col);
     }
+
+    public void RemoveMarker(int position)
+    {
+        position -= 1;
+        _board[position / 3][position % 3] = ' ';
+        _currentMarker = _currentMarker == 'X' ? 'O' : 'X';
+    }
+
 }
 
 

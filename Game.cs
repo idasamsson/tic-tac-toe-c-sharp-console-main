@@ -1,8 +1,8 @@
 class Game
 {
     private Board _board;
-    private string _playerXName;
-    private string _playerOName;
+    private string _playerXName = "";
+    private string _playerOName ="";
 
 
     public Game()
@@ -15,7 +15,8 @@ class Game
     private void AskForNames()
     {
         Console.WriteLine("Välkommen till Tic Tac Toe");
-        Console.WriteLine("För att skapa en dum datorspelare lägg till * i någons namn");
+        Console.WriteLine("För att skapa en dum datorspelare lägg till * i någons namn.");
+        Console.WriteLine("För att skapa en smart datorspelare lägg till + i någons namn.");
         Console.Write("Spelare X:s namn: ");
         _playerXName = Console.ReadLine()!;
         Console.Write("Spelare O:s namn: ");
@@ -34,6 +35,10 @@ class Game
             if (currentPlayer!.Contains('*'))
             {
                 StupidBot.MakeMove(_board);
+            }
+            else if (currentPlayer!.Contains('+'))
+            {
+                SmartBot.MakeMove(_board);
             }
             //human
             else
@@ -55,16 +60,25 @@ class Game
                 }
             }
             // Check for win or tie
-            if (WinCheck.CheckIsWin(_board, 'X'))
-            {
-                Console.WriteLine($"{_playerXName} vann!");
-                break;
-            }
-            else if (WinCheck.IsTie(_board))
-            {
-                Console.WriteLine($"{_playerXName} vann!");
-                break;
-            }
+        Console.Clear();
+
+        _board.Render();
+
+        if (WinCheck.CheckIsWin(_board, 'X'))
+        {
+            Console.WriteLine($"{_playerXName} vann!");
+            break;
+        }
+        if (WinCheck.CheckIsWin(_board, 'O'))
+        {
+            Console.WriteLine($"{_playerOName} vann!");
+            break;
+        }
+        else if (WinCheck.IsTie(_board))
+        {
+            Console.WriteLine("Det blev oavgjort!");
+            break;
+        }
             
         }
     }

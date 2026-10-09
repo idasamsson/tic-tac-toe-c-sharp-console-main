@@ -1,6 +1,6 @@
 static class WinCheck
 {
-    private static int [][][] _winCombos =
+    public static int [][][] WinCombos { get; } =
     {
 
        [[0,0], [0,1], [0,2]],
@@ -12,13 +12,13 @@ static class WinCheck
        [[0,2], [1,2], [2,2]],
 
        [[0,0], [1,1], [2,2]],
-       [[0,2], [1,1], [2,1]]
+       [[0,2], [1,1], [2,0]]
     };
 
     public static bool CheckIsWin (Board board, char markerColor)
     {
         // loop through all 8 win combos
-        foreach(int[][] combo in _winCombos)
+        foreach(int[][] combo in WinCombos)
         {
             // loop through the positions in one combo
             bool won = true;
@@ -48,6 +48,6 @@ static class WinCheck
             }
         }
         // it's a tie if the board is full and noone has won
-        return isFull && !CheckIsWin(board, 'X') && isFull &&!CheckIsWin(board, 'O');
+        return isFull && !CheckIsWin(board, 'X') &&!CheckIsWin(board, 'O');
     }
 }

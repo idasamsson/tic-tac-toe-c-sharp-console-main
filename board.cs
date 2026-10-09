@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 class Board
 {
     //a "jagged" two-dimensional array in C#
@@ -9,7 +11,12 @@ class Board
    };
 
    //current player/marker
-   private char _currentMarker = 'X';
+    private char _currentMarker = 'X';
+    public char CurrentMarker
+    {
+    get(return _currentMarker;) 
+    }
+    */
 
 
 public void Render()
